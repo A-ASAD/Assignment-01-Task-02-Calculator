@@ -13,9 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:gravity="right|bottom"
-        android:text="1200*20*60"
         android:textColor="@color/white"
-        android:textSize="9pt"
+        android:textSize="10pt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +24,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:text="5,760,000"
         android:textColor="@color/white"
         android:textSize="18pt"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,9 +33,9 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="#faa2a4" />
+        android:background="#faa2a4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -57,41 +55,53 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/ac"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="AC"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/div"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="/"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/mul"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="X"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/minus"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="-"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
@@ -106,40 +116,53 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/seven"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="7"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/eight"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="8"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/nine"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="9"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
+
             <TextView
+                android:id="@+id/plus"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="+"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
@@ -153,41 +176,53 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/four"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="4"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/five"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="5"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/six"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="6"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/mod"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="%"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
@@ -201,40 +236,53 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/one"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="1"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/two"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="2"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/three"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="3"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
+
             <TextView
+                android:id="@+id/del"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="del"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
@@ -249,41 +297,53 @@
             android:orientation="horizontal">
 
             <TextView
+                android:id="@+id/dbzero"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="00"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/zero"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="0"
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/dot"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="."
                 android:textColor="@color/white"
                 android:textSize="10pt" />
 
             <TextView
+                android:id="@+id/equalTo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:gravity="center"
+                android:onClick="keyPress"
                 android:text="="
                 android:textColor="@color/white"
                 android:textSize="10pt" />
