@@ -231,8 +231,11 @@ public class MainActivity extends AppCompatActivity {
                 if(Double.isNaN(res)){
                     tvResult.setText("Bad Expression");
                 }
-                else if(res - Math.round(res) == 0)
-                    tvResult.setText(Integer.toString((int)Math.round(res)));
+                else if(res - Math.round(res) == 0){
+                    String reslt = Double.toString(Math.round(res));
+                    reslt = reslt.substring(0, reslt.length()-2);
+                    tvResult.setText(reslt);
+                }
                 else
                     tvResult.setText(Double.toString((double)Math.round(res*100)/100));
         }
