@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import org.mariuszgromada.math.mxparser.*;
-//import net.objecthunter.exp4j.*;
 
 public class MainActivity extends AppCompatActivity {
 
